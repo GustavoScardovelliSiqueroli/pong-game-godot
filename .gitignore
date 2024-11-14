@@ -1,0 +1,14 @@
+# Godot specific files
+.import
+export.cfg
+export
+
+# Thumbnails
+thumbs
+
+# Godot Editor settings
+.editor
+
+# OS specific files
+.DS_Store
+Thumbs.db
