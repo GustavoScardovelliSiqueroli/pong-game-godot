@@ -1,6 +1,6 @@
 extends Area2D
 
-const DEFAULT_SPEED = 100
+const DEFAULT_SPEED = 150
 
 var _speed = DEFAULT_SPEED
 var direction = Vector2.LEFT
@@ -19,7 +19,7 @@ func _process(delta):
 	# pq se o x fosse fixo, o valor aleatorio do y iria impactar
 	# na velocidade da bola;
 	
-	_speed += delta * 2
+	_speed += delta * 4 # delta * 2
 	# speed comeca com 100 e e somada com um restinho do delta vezes 2
 	# para ir aumentando aos poucos (ela poderia ser multiplicado po 0.3
 	# que daria na mesma;
