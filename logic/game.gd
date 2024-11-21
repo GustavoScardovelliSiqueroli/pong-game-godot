@@ -2,8 +2,8 @@ extends Node2D
 
 var left_score = 0
 var right_score = 0
-@onready var left_score_label = $CanvasLayer/LeftScoreLabel
-@onready var right_score_label = $CanvasLayer/RightScoreLabel
+@onready var left_score_label = $CanvasLayer/Control/LeftScoreLabel
+@onready var right_score_label = $CanvasLayer/Control/RightScoreLabel
 
 
 # Called when the node enters the scene tree for the first time.
