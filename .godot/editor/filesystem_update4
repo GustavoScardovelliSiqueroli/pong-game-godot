@@ -1,3 +1,2 @@
-res://pong.tscn
-res://logic/game.gd
-res://cenas/ball.tscn
+res://cenas/menu.tscn
+res://themes/fontmenu.tres
