@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1732293021
+::res://::1732552822
 ball.png::CompressedTexture2D::5575170535578718130::1731606507::1731606527::1::::<><>::
 export_presets.cfg::TextFile::-1::1731936968::0::1::::<><>::
 icon.webp::CompressedTexture2D::3626017087650301524::1731606507::1731606527::1::::<><>::
@@ -7,13 +7,14 @@ paddle.png::CompressedTexture2D::8668442055447141068::1731606507::1731606527::1:
 pong.tscn::PackedScene::654744092352024972::1732282392::0::1::::<><>::res://logic/paddle.gd<>res://logic/game.gd<>uid://dvrb8efddt0aa::::res://paddle.png<>uid://c72cw5i83ptj7::::res://cenas/ball.tscn<>uid://drgpdyyomyqpl::::res://separator.png<>res://logic/wall.gd<>res://logic/ceiling_floor.gd<>uid://clsyu2mp7n850::::res://assets/PublicPixel-z84yD.ttf
 README.md::TextFile::-1::1731606507::0::1::::<><>::
 separator.png::CompressedTexture2D::8365776070012227721::1731606507::1731606527::1::::<><>::
-::res://assets/::1732286372
+::res://assets/::1732553505
 7pxMONOkeychain.ttf::FontFile::6273443380339297802::1732285925::1732285949::1::::<><>::
+bgteste.png::CompressedTexture2D::3546038441799956470::1732553479::1732553675::1::::<><>::
 PublicPixel-z84yD.ttf::FontFile::5583571808075078497::1732214312::1732214379::1::::<><>::
 quaver.ttf::FontFile::41788558068879259::1732286354::1732286372::1::::<><>::
-::res://cenas/::1732293001
+::res://cenas/::1732295359
 ball.tscn::PackedScene::7074784874210630902::1732218414::0::1::::<><>::res://logic/ball.gd<>uid://clowikjgl4yq1::::res://ball.png
-menu.tscn::PackedScene::7659594836678105839::1732293001::0::1::::<><>::res://logic/menu.gd<>uid://dvg7b6momj8vj::::res://themes/fontmenu.tres
+menu.tscn::PackedScene::7659594836678105839::1732295359::0::1::::<><>::res://logic/menu.gd<>uid://dvg7b6momj8vj::::res://themes/fontmenu.tres
 ::res://logic/::1732285282
 ball.gd::GDScript::-1::1731933504::0::1::::<>Area2D<>::
 ceiling_floor.gd::GDScript::-1::1731606507::0::1::::<>Area2D<>::
@@ -21,5 +22,5 @@ game.gd::GDScript::-1::1732214516::0::1::::<>Node2D<>::
 menu.gd::GDScript::-1::1732285282::0::1::::<>Control<>::
 paddle.gd::GDScript::-1::1731612780::0::1::::<>Area2D<>::
 wall.gd::GDScript::-1::1732021072::0::1::::<>Area2D<>::
-::res://themes/::1732293001
-fontmenu.tres::Theme::8647560410978805663::1732293001::0::1::::<><>::uid://uiisw3mcfyh::::res://assets/quaver.ttf
+::res://themes/::1732294992
+fontmenu.tres::Theme::8647560410978805663::1732294992::0::1::::<><>::uid://uiisw3mcfyh::::res://assets/quaver.ttf
