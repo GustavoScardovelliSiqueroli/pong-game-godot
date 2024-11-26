@@ -3,10 +3,11 @@ extends Area2D
 const DEFAULT_SPEED = 150
 
 var _speed = DEFAULT_SPEED
-var direction = Vector2.LEFT
+var direction = Vector2(0,0)
 @onready var _initial_pos = position
 
-
+func _ready() -> void:
+	reset()
 
 func _process(delta):
 	# delta e em torno de 0.016;
@@ -29,8 +30,18 @@ func _process(delta):
 	# nao somar muitas casas na position;
 	position += _speed * delta * direction
 
-
 func reset():
-	direction = Vector2.LEFT
 	position = _initial_pos
+	direction = Vector2(0,0)
+	$Timer.start()
+
+func _on_timer_timeout() -> void:
+	print("PENIS")
+	direction = randomize_direction()
 	_speed = DEFAULT_SPEED
+
+func randomize_direction() -> Vector2:
+	if randi() % 2 == 0:
+		return Vector2.LEFT 
+	else:
+		return Vector2.RIGHT 
