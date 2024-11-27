@@ -1,6 +1,1 @@
 res://pong.tscn
-res://logic/ball.gd
-res://cenas/ball.tscn
-res://themes/fontmenu.tres
-res://logic/menu.gd
-res://cenas/menu.tscn

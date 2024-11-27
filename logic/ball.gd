@@ -36,7 +36,6 @@ func reset():
 	$Timer.start()
 
 func _on_timer_timeout() -> void:
-	print("PENIS")
 	direction = randomize_direction()
 	_speed = DEFAULT_SPEED
 
