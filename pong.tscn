@@ -32,26 +32,28 @@ offset_right = 640.0
 offset_bottom = 400.0
 color = Color(0.027451, 0, 0.0901961, 1)
 
-[node name="Left" type="Area2D" parent="."]
+[node name="Paddles" type="Node" parent="."]
+
+[node name="Left" type="Area2D" parent="Paddles"]
 modulate = Color(0, 1, 1, 1)
 position = Vector2(67.6285, 192.594)
 script = ExtResource("1")
 
-[node name="Sprite2D" type="Sprite2D" parent="Left"]
+[node name="Sprite2D" type="Sprite2D" parent="Paddles/Left"]
 texture = ExtResource("2")
 
-[node name="Collision" type="CollisionShape2D" parent="Left"]
+[node name="Collision" type="CollisionShape2D" parent="Paddles/Left"]
 shape = SubResource("1")
 
-[node name="Right" type="Area2D" parent="."]
+[node name="Right" type="Area2D" parent="Paddles"]
 modulate = Color(1, 0, 1, 1)
 position = Vector2(563.815, 188.919)
 script = ExtResource("1")
 
-[node name="Sprite2D" type="Sprite2D" parent="Right"]
+[node name="Sprite2D" type="Sprite2D" parent="Paddles/Right"]
 texture = ExtResource("2")
 
-[node name="Collision" type="CollisionShape2D" parent="Right"]
+[node name="Collision" type="CollisionShape2D" parent="Paddles/Right"]
 shape = SubResource("1")
 
 [node name="Ball" parent="." instance=ExtResource("4_5i3j6")]
@@ -60,33 +62,35 @@ shape = SubResource("1")
 position = Vector2(320, 200)
 texture = ExtResource("6")
 
-[node name="LeftWall" type="Area2D" parent="."]
+[node name="Walls" type="Node" parent="."]
+
+[node name="LeftWall" type="Area2D" parent="Walls"]
 position = Vector2(-10, 200)
 script = ExtResource("7")
 
-[node name="Collision" type="CollisionShape2D" parent="LeftWall"]
+[node name="Collision" type="CollisionShape2D" parent="Walls/LeftWall"]
 shape = SubResource("3")
 
-[node name="RightWall" type="Area2D" parent="."]
+[node name="RightWall" type="Area2D" parent="Walls"]
 position = Vector2(650, 200)
 script = ExtResource("7")
 
-[node name="Collision" type="CollisionShape2D" parent="RightWall"]
+[node name="Collision" type="CollisionShape2D" parent="Walls/RightWall"]
 shape = SubResource("3")
 
-[node name="Ceiling" type="Area2D" parent="."]
+[node name="Ceiling" type="Area2D" parent="Walls"]
 position = Vector2(320, -10)
 script = ExtResource("8")
 
-[node name="Collision" type="CollisionShape2D" parent="Ceiling"]
+[node name="Collision" type="CollisionShape2D" parent="Walls/Ceiling"]
 shape = SubResource("4")
 
-[node name="Floor" type="Area2D" parent="."]
+[node name="Floor" type="Area2D" parent="Walls"]
 position = Vector2(320, 410)
 script = ExtResource("8")
 _bounce_direction = -1
 
-[node name="Collision" type="CollisionShape2D" parent="Floor"]
+[node name="Collision" type="CollisionShape2D" parent="Walls/Floor"]
 shape = SubResource("4")
 
 [node name="Camera2D" type="Camera2D" parent="."]
@@ -124,11 +128,11 @@ text = "0"
 label_settings = SubResource("LabelSettings_86yeb")
 vertical_alignment = 1
 
-[connection signal="area_entered" from="Left" to="Left" method="_on_area_entered"]
-[connection signal="area_entered" from="Right" to="Right" method="_on_area_entered"]
-[connection signal="area_entered" from="LeftWall" to="LeftWall" method="_on_wall_area_entered"]
-[connection signal="ball_out" from="LeftWall" to="." method="_on_left_wall_ball_out"]
-[connection signal="area_entered" from="RightWall" to="RightWall" method="_on_wall_area_entered"]
-[connection signal="ball_out" from="RightWall" to="." method="_on_right_wall_ball_out"]
-[connection signal="area_entered" from="Ceiling" to="Ceiling" method="_on_area_entered"]
-[connection signal="area_entered" from="Floor" to="Floor" method="_on_area_entered"]
+[connection signal="area_entered" from="Paddles/Left" to="Paddles/Left" method="_on_area_entered"]
+[connection signal="area_entered" from="Paddles/Right" to="Paddles/Right" method="_on_area_entered"]
+[connection signal="area_entered" from="Walls/LeftWall" to="Walls/LeftWall" method="_on_wall_area_entered"]
+[connection signal="ball_out" from="Walls/LeftWall" to="." method="_on_left_wall_ball_out"]
+[connection signal="area_entered" from="Walls/RightWall" to="Walls/RightWall" method="_on_wall_area_entered"]
+[connection signal="ball_out" from="Walls/RightWall" to="." method="_on_right_wall_ball_out"]
+[connection signal="area_entered" from="Walls/Ceiling" to="Walls/Ceiling" method="_on_area_entered"]
+[connection signal="area_entered" from="Walls/Floor" to="Walls/Floor" method="_on_area_entered"]

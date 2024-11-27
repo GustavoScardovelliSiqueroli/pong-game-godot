@@ -5,6 +5,7 @@ const DEFAULT_SPEED = 150
 var _speed = DEFAULT_SPEED
 var direction = Vector2(0,0)
 @onready var _initial_pos = position
+@onready var song_impact_walls = $SongImpactWalls
 
 func _ready() -> void:
 	reset()
@@ -44,3 +45,6 @@ func randomize_direction() -> Vector2:
 		return Vector2.LEFT 
 	else:
 		return Vector2.RIGHT 
+
+func start_song_impact_walls() -> void:
+	song_impact_walls.play()
