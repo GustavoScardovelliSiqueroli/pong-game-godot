@@ -2,12 +2,12 @@
 
 [ext_resource type="Script" path="res://logic/paddle.gd" id="1"]
 [ext_resource type="Script" path="res://logic/game.gd" id="1_8r5gj"]
-[ext_resource type="Texture2D" uid="uid://dvrb8efddt0aa" path="res://paddle.png" id="2"]
+[ext_resource type="Texture2D" uid="uid://dvrb8efddt0aa" path="res://assets/imgs/paddle.png" id="2"]
 [ext_resource type="PackedScene" uid="uid://c72cw5i83ptj7" path="res://cenas/ball.tscn" id="4_5i3j6"]
 [ext_resource type="Texture2D" uid="uid://drgpdyyomyqpl" path="res://separator.png" id="6"]
 [ext_resource type="Script" path="res://logic/wall.gd" id="7"]
 [ext_resource type="Script" path="res://logic/ceiling_floor.gd" id="8"]
-[ext_resource type="FontFile" uid="uid://clsyu2mp7n850" path="res://assets/PublicPixel-z84yD.ttf" id="9_3gr4x"]
+[ext_resource type="FontFile" uid="uid://uiisw3mcfyh" path="res://assets/quaver.ttf" id="8_sjm28"]
 
 [sub_resource type="RectangleShape2D" id="1"]
 size = Vector2(8, 32)
@@ -19,10 +19,8 @@ size = Vector2(20, 400)
 size = Vector2(640, 20)
 
 [sub_resource type="LabelSettings" id="LabelSettings_6crsv"]
-font = ExtResource("9_3gr4x")
 
 [sub_resource type="LabelSettings" id="LabelSettings_86yeb"]
-font = ExtResource("9_3gr4x")
 
 [node name="Pong" type="Node2D"]
 script = ExtResource("1_8r5gj")
@@ -113,6 +111,7 @@ offset_left = 580.0
 offset_top = 20.0
 offset_right = 620.0
 offset_bottom = 43.0
+theme_override_fonts/font = ExtResource("8_sjm28")
 text = "0
 "
 label_settings = SubResource("LabelSettings_6crsv")
@@ -124,6 +123,7 @@ offset_left = 20.0
 offset_top = 20.0
 offset_right = 60.0
 offset_bottom = 43.0
+theme_override_fonts/font = ExtResource("8_sjm28")
 text = "0"
 label_settings = SubResource("LabelSettings_86yeb")
 vertical_alignment = 1

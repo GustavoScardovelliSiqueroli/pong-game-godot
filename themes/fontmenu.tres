@@ -1,15 +1,14 @@
 [gd_resource type="Theme" load_steps=3 format=3 uid="uid://dvg7b6momj8vj"]
 
-[ext_resource type="FontFile" uid="uid://uiisw3mcfyh" path="res://assets/quaver.ttf" id="1_61t05"]
+[ext_resource type="FontFile" uid="uid://uiisw3mcfyh" path="res://assets/quaver.ttf" id="1_jq7kn"]
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hvatc"]
-bg_color = Color(0.538604, 0.703389, 0.97686, 1)
-skew = Vector2(10, 0)
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wrbl6"]
+bg_color = Color(0.580392, 0.372549, 0.968627, 1)
+skew = Vector2(5, 0)
 
 [resource]
-default_font = ExtResource("1_61t05")
-default_font_size = 20
-/fonts/teste = ExtResource("1_61t05")
-Button/font_sizes/focus = 20
+default_font = ExtResource("1_jq7kn")
+default_font_size = 16
+Button/colors/font_focus_color = Color(1, 1, 1, 1)
 Button/font_sizes/font_size = 16
-Button/styles/focus = SubResource("StyleBoxFlat_hvatc")
+Button/styles/focus = SubResource("StyleBoxFlat_wrbl6")

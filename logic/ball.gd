@@ -35,7 +35,7 @@ func reset():
 	position = _initial_pos
 	direction = Vector2(0,0)
 	$Timer.start()
-
+	
 func _on_timer_timeout() -> void:
 	direction = randomize_direction()
 	_speed = DEFAULT_SPEED
