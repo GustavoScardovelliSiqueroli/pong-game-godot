@@ -1,3 +1,3 @@
 res://cenas/menu.tscn
 res://themes/fontmenu.tres
-res://logic/menu.gd
+res://cenas/intro.tscn

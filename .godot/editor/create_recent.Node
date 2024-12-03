@@ -1,10 +1,13 @@
+Node2D
+AnimationPlayer
+Label
+Sprite2D
+ColorRect
 AudioStreamPlayer
 Node
 Timer
-Sprite2D
 MarginContainer
 Button
 VBoxContainer
 Control
-Label
 CanvasLayer
