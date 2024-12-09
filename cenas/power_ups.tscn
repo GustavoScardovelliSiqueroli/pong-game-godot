@@ -1,0 +1,196 @@
+[gd_scene load_steps=16 format=3 uid="uid://br35y80egiq0x"]
+
+[ext_resource type="Script" path="res://logic/power_ups.gd" id="1_q0tcp"]
+[ext_resource type="Texture2D" uid="uid://rtvwuqxliwdj" path="res://assets/imgs/New Piskel (3).png" id="2_hh5dc"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ajaj4"]
+atlas = ExtResource("2_hh5dc")
+region = Rect2(0, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7o4we"]
+atlas = ExtResource("2_hh5dc")
+region = Rect2(128, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_407mj"]
+atlas = ExtResource("2_hh5dc")
+region = Rect2(256, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dbl8j"]
+atlas = ExtResource("2_hh5dc")
+region = Rect2(0, 128, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nn5r1"]
+atlas = ExtResource("2_hh5dc")
+region = Rect2(128, 128, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qyw3h"]
+atlas = ExtResource("2_hh5dc")
+region = Rect2(256, 128, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2rh3h"]
+atlas = ExtResource("2_hh5dc")
+region = Rect2(0, 256, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_l27er"]
+atlas = ExtResource("2_hh5dc")
+region = Rect2(128, 256, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1glwj"]
+atlas = ExtResource("2_hh5dc")
+region = Rect2(256, 256, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_55pfe"]
+atlas = ExtResource("2_hh5dc")
+region = Rect2(0, 384, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_artga"]
+atlas = ExtResource("2_hh5dc")
+region = Rect2(128, 384, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hvyuk"]
+atlas = ExtResource("2_hh5dc")
+region = Rect2(256, 384, 128, 128)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_bn8cy"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ajaj4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7o4we")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_407mj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dbl8j")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nn5r1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qyw3h")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2rh3h")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_l27er")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1glwj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_55pfe")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_artga")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hvyuk")
+}],
+"loop": true,
+"name": &"new_animation",
+"speed": 12.0
+}]
+
+[node name="PowerUps" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_q0tcp")
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CenterContainer"]
+layout_mode = 2
+
+[node name="Control" type="Control" parent="CenterContainer/HBoxContainer"]
+custom_minimum_size = Vector2(128, 128)
+layout_mode = 2
+
+[node name="Button" type="Button" parent="CenterContainer/HBoxContainer/Control"]
+custom_minimum_size = Vector2(128, 128)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CenterContainer/HBoxContainer/Control"]
+position = Vector2(64, 64)
+sprite_frames = SubResource("SpriteFrames_bn8cy")
+animation = &"new_animation"
+frame = 11
+frame_progress = 1.0
+
+[node name="Control2" type="Control" parent="CenterContainer/HBoxContainer"]
+custom_minimum_size = Vector2(128, 128)
+layout_mode = 2
+
+[node name="Button" type="Button" parent="CenterContainer/HBoxContainer/Control2"]
+custom_minimum_size = Vector2(128, 128)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CenterContainer/HBoxContainer/Control2"]
+position = Vector2(64, 64)
+sprite_frames = SubResource("SpriteFrames_bn8cy")
+animation = &"new_animation"
+frame = 11
+frame_progress = 1.0
+
+[node name="Control3" type="Control" parent="CenterContainer/HBoxContainer"]
+custom_minimum_size = Vector2(128, 128)
+layout_mode = 2
+
+[node name="Button" type="Button" parent="CenterContainer/HBoxContainer/Control3"]
+custom_minimum_size = Vector2(128, 128)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CenterContainer/HBoxContainer/Control3"]
+position = Vector2(64, 64)
+sprite_frames = SubResource("SpriteFrames_bn8cy")
+animation = &"new_animation"
+frame = 11
+frame_progress = 1.0
+
+[node name="Control4" type="Control" parent="CenterContainer/HBoxContainer"]
+custom_minimum_size = Vector2(128, 128)
+layout_mode = 2
+
+[node name="Button" type="Button" parent="CenterContainer/HBoxContainer/Control4"]
+custom_minimum_size = Vector2(128, 128)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CenterContainer/HBoxContainer/Control4"]
+position = Vector2(64, 64)
+sprite_frames = SubResource("SpriteFrames_bn8cy")
+animation = &"new_animation"
+frame = 11
+frame_progress = 1.0

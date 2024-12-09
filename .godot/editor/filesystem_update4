@@ -1,3 +1,4 @@
-res://cenas/menu.tscn
+res://cenas/power_ups.tscn
 res://themes/fontmenu.tres
-res://cenas/intro.tscn
+res://cenas/menu.tscn
+res://logic/power_ups.gd

@@ -14,7 +14,7 @@ config/name="Pong with GDScript Demo"
 config/description="A simple Pong game. This demo shows best practices
 for game development in Godot, including signals."
 config/tags=PackedStringArray("2d", "demo", "official")
-run/main_scene="res://cenas/menu.tscn"
+run/main_scene="res://cenas/intro.tscn"
 config/features=PackedStringArray("4.2")
 config/icon="res://icon.webp"
 
@@ -22,6 +22,7 @@ config/icon="res://icon.webp"
 
 window/size/viewport_width=640
 window/size/viewport_height=400
+window/size/mode=3
 window/size/resizable=false
 window/size/borderless=true
 window/stretch/mode="canvas_items"

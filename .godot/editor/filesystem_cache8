@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1733251481
+::res://::1733770331
 ball.png::CompressedTexture2D::5575170535578718130::1733147300::1733147300::1::::<><>::
 default_bus_layout.tres::AudioBusLayout::3441094057407190873::1733147300::0::1::::<><>::
 export_presets.cfg::TextFile::-1::1733147300::0::1::::<><>::
@@ -8,21 +8,28 @@ README.md::TextFile::-1::1733147300::0::1::::<><>::
 separator.png::CompressedTexture2D::8365776070012227721::1733147300::1733147300::1::::<><>::
 ::res://assets/::1733251481
 quaver.ttf::FontFile::41788558068879259::1733147300::1733149698::1::::<><>::
-::res://assets/imgs/::1733251481
+::res://assets/imgs/::1733773475
 bgteste.png::CompressedTexture2D::3546038441799956470::1733147300::1733168648::1::::<><>::
 logogss.jpeg::CompressedTexture2D::7096082551180311802::1733251478::1733251481::1::::<><>::
+logogss.png::CompressedTexture2D::5313797071256619839::1733330978::1733421225::1::::<><>::
+New Piskel (1).png::CompressedTexture2D::6171018185018006304::1733421912::1733421935::1::::<><>::
+New Piskel (2).png::CompressedTexture2D::2321804744947748218::1733772881::1733772881::1::::<><>::
+New Piskel (3).png::CompressedTexture2D::1233748939731617687::1733773475::1733773475::1::::<><>::
+New Piskel.png::CompressedTexture2D::168767078180449956::1733421815::1733421845::1::::<><>::
 paddle.png::CompressedTexture2D::8668442055447141068::1733147300::1733168660::1::::<><>::
-::res://cenas/::1733251465
+::res://cenas/::1733772985
 ball.tscn::PackedScene::7074784874210630902::1733148902::0::1::::<><>::res://logic/ball.gd<>uid://clowikjgl4yq1::::res://ball.png
-intro.tscn::PackedScene::1750945501219616567::1733251465::0::1::::<><>::
-menu.tscn::PackedScene::7659594836678105839::1733250559::0::1::::<><>::res://logic/menu.gd<>uid://dvg7b6momj8vj::::res://themes/fontmenu.tres<>uid://uiisw3mcfyh::::res://assets/quaver.ttf<>uid://bqryy8ys1tqb3::::res://assets/imgs/bgteste.png
-pong.tscn::PackedScene::654744092352024972::1733168660::0::1::::<><>::res://logic/paddle.gd<>res://logic/game.gd<>uid://dvrb8efddt0aa::::res://assets/imgs/paddle.png<>uid://c72cw5i83ptj7::::res://cenas/ball.tscn<>uid://drgpdyyomyqpl::::res://separator.png<>res://logic/wall.gd<>res://logic/ceiling_floor.gd<>uid://uiisw3mcfyh::::res://assets/quaver.ttf
-::res://logic/::1733244572
+intro.tscn::PackedScene::1750945501219616567::1733420320::0::1::::<><>::uid://c8dnpb7pr0a7c::::res://assets/imgs/logogss.jpeg<>res://logic/intro.gd<>uid://dvg7b6momj8vj::::res://themes/fontmenu.tres
+menu.tscn::PackedScene::7659594836678105839::1733770351::0::1::::<><>::res://logic/menu.gd<>uid://dvg7b6momj8vj::::res://themes/fontmenu.tres<>uid://uiisw3mcfyh::::res://assets/quaver.ttf<>uid://bqryy8ys1tqb3::::res://assets/imgs/bgteste.png
+pong.tscn::PackedScene::654744092352024972::1733420815::0::1::::<><>::res://logic/paddle.gd<>res://logic/game.gd<>uid://dvrb8efddt0aa::::res://assets/imgs/paddle.png<>uid://c72cw5i83ptj7::::res://cenas/ball.tscn<>uid://drgpdyyomyqpl::::res://separator.png<>res://logic/wall.gd<>res://logic/ceiling_floor.gd<>uid://uiisw3mcfyh::::res://assets/quaver.ttf
+power_ups.tscn::PackedScene::3639299743570795401::1733772985::0::1::::<><>::uid://ct6j1dx7b2xtw::::res://assets/imgs/New Piskel (1).png
+::res://logic/::1733420914
 ball.gd::GDScript::-1::1733148130::0::1::::<>Area2D<>::
 ceiling_floor.gd::GDScript::-1::1733147300::0::1::::<>Area2D<>::
-game.gd::GDScript::-1::1733148087::0::1::::<>Node2D<>::
+game.gd::GDScript::-1::1733420914::0::1::::<>Node2D<>::
+intro.gd::GDScript::-1::1733316434::0::1::::<>Node2D<>::
 menu.gd::GDScript::-1::1733244572::0::1::::<>Control<>::
 paddle.gd::GDScript::-1::1733147300::0::1::::<>Area2D<>::
 wall.gd::GDScript::-1::1733147300::0::1::::<>Area2D<>::
-::res://themes/::1733250559
-fontmenu.tres::Theme::8647560410978805663::1733250559::0::1::::<><>::uid://uiisw3mcfyh::::res://assets/quaver.ttf
+::res://themes/::1733770351
+fontmenu.tres::Theme::8647560410978805663::1733770351::0::1::::<><>::uid://uiisw3mcfyh::::res://assets/quaver.ttf
